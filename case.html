@@ -1,17 +1,325 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>网教平台--案例</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/case.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/hover-min.css">
     <script src="js/jquery.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/case.js"></script>
 </head>
+
 <body>
-    <div class="header">
-        
+    <div class="top-nav">
+        <div class="w nav-bar">
+            <div class="logo">
+                <img src="img/LOGO1.png" alt="">
+            </div>
+            <div class="r-nav">
+                <ul class="web-nav clearfix">
+                    <li class="nav-item">
+                        <a href="index.html" class="item_link item-current">首页</a>
+                    </li>
+                    <li class="nav-item nav-item-fw">
+                        <a href="fw_trainingInstitution.html" class="item_link">服务</a>
+                        <div class="fw_menu">
+                            <ul>
+                                <li class="fw_item"><a class="fw_item_link fw_item_cur" href="fw_trainingInstitution.html">教培机构</a></li>
+                                <li class="fw_item"><a class="fw_item_link" href="fw_smartCampus.html">智慧校园</a></li>
+                                <li class="fw_item"><a class="fw_item_link" href="fw_enterpriseTraining.html">企业培训</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="case.html" class="item_link">案例</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="item_link">新闻</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about_us.html" class="item_link">关于</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-    
+    <div class="case_banner">
+        <img src="img/anli_banner.jpg" alt="">
+    </div>
+    <div class="w case-main">
+        <h3 class="title">
+            上千个案例的积累，让我们更懂教育
+        </h3>
+        <ul class="tab-hd clearfix">
+            <li class="tab tab-cur">教培机构</li>
+            <li class="tab">智慧校园</li>
+            <li class="tab">企业培训</li>
+        </ul>
+        <div class="tab-bd">
+            <ul class="tab-item case-list clearfix case-list-cur">
+                <li class="case m-r">
+                    <img src="img/home_img4.jpg" alt="">
+                    <div class="desc clearfix">
+                        <span class="case-name">
+                            蓝天教育
+                        </span>
+                        <span class="go-look">
+                            <span class="txt">去看看</span>
+                            <img src="img/home_icon2.png" alt="">
+                        </span>
+                    </div>
+                </li>
+                <li class="case m-r">
+                    <img src="img/home_img5.jpg" alt="">
+                    <div class="desc clearfix">
+                        <span class="case-name">
+                            大美汉字
+                        </span>
+                        <span class="go-look">
+                            <span class="txt">去看看</span>
+                            <img src="img/home_icon2.png" alt="">
+                        </span>
+                    </div>
+                </li>
+                <li class="case">
+                    <img src="img/home_img6.jpg" alt="">
+                    <div class="desc clearfix">
+                        <span class="case-name">
+                            大立教育网
+                        </span>
+                        <span class="go-look">
+                            <span class="txt">去看看</span>
+                            <img src="img/home_icon2.png" alt="">
+                        </span>
+                    </div>
+                </li>
+                <li class="case m-r m-t">
+                    <img src="img/home_img7.jpg" alt="">
+                    <div class="desc clearfix">
+                        <span class="case-name">
+                            金英杰医学
+                        </span>
+                        <span class="go-look">
+                            <span class="txt">去看看</span>
+                            <img src="img/home_icon2.png" alt="">
+                        </span>
+                    </div>
+                </li>
+                <li class="case m-r m-t">
+                    <img src="img/home_img8.jpg" alt="">
+                    <div class="desc clearfix">
+                        <span class="case-name">
+                            紫金博睿国际教育
+                        </span>
+                        <span class="go-look">
+                            <span class="txt">去看看</span>
+                            <img src="img/home_icon2.png" alt="">
+                        </span>
+                    </div>
+                </li>
+                <li class="case m-t">
+                    <img src="img/home_img9.jpg" alt="">
+                    <div class="desc clearfix">
+                        <span class="case-name">
+                            易电培训-华夏明源
+                        </span>
+                        <span class="go-look">
+                            <span class="txt">去看看</span>
+                            <img src="img/home_icon2.png" alt="">
+                        </span>
+                    </div>
+                </li>
+            </ul>
+            <ul class="tab-item case-list clearfix">
+                <li class="case m-r">
+                    <img src="img/home_img5.jpg" alt="">
+                    <div class="desc clearfix">
+                        <span class="case-name">
+                            蓝天教育
+                        </span>
+                        <span class="go-look">
+                            <span class="txt">去看看</span>
+                            <img src="img/home_icon2.png" alt="">
+                        </span>
+                    </div>
+                </li>
+                <li class="case m-r">
+                    <img src="img/home_img5.jpg" alt="">
+                    <div class="desc clearfix">
+                        <span class="case-name">
+                            大美汉字
+                        </span>
+                        <span class="go-look">
+                            <span class="txt">去看看</span>
+                            <img src="img/home_icon2.png" alt="">
+                        </span>
+                    </div>
+                </li>
+                <li class="case">
+                    <img src="img/home_img6.jpg" alt="">
+                    <div class="desc clearfix">
+                        <span class="case-name">
+                            大立教育网
+                        </span>
+                        <span class="go-look">
+                            <span class="txt">去看看</span>
+                            <img src="img/home_icon2.png" alt="">
+                        </span>
+                    </div>
+                </li>
+                <li class="case m-r m-t">
+                    <img src="img/home_img7.jpg" alt="">
+                    <div class="desc clearfix">
+                        <span class="case-name">
+                            金英杰医学
+                        </span>
+                        <span class="go-look">
+                            <span class="txt">去看看</span>
+                            <img src="img/home_icon2.png" alt="">
+                        </span>
+                    </div>
+                </li>
+                <li class="case m-r m-t">
+                    <img src="img/home_img8.jpg" alt="">
+                    <div class="desc clearfix">
+                        <span class="case-name">
+                            紫金博睿国际教育
+                        </span>
+                        <span class="go-look">
+                            <span class="txt">去看看</span>
+                            <img src="img/home_icon2.png" alt="">
+                        </span>
+                    </div>
+                </li>
+                <li class="case m-t">
+                    <img src="img/home_img9.jpg" alt="">
+                    <div class="desc clearfix">
+                        <span class="case-name">
+                            易电培训-华夏明源
+                        </span>
+                        <span class="go-look">
+                            <span class="txt">去看看</span>
+                            <img src="img/home_icon2.png" alt="">
+                        </span>
+                    </div>
+                </li>
+            </ul>
+            <ul class="tab-item case-list clearfix">
+                <li class="case m-r">
+                    <img src="img/home_img6.jpg" alt="">
+                    <div class="desc clearfix">
+                        <span class="case-name">
+                            蓝天教育
+                        </span>
+                        <span class="go-look">
+                            <span class="txt">去看看</span>
+                            <img src="img/home_icon2.png" alt="">
+                        </span>
+                    </div>
+                </li>
+                <li class="case m-r">
+                    <img src="img/home_img5.jpg" alt="">
+                    <div class="desc clearfix">
+                        <span class="case-name">
+                            大美汉字
+                        </span>
+                        <span class="go-look">
+                            <span class="txt">去看看</span>
+                            <img src="img/home_icon2.png" alt="">
+                        </span>
+                    </div>
+                </li>
+                <li class="case">
+                    <img src="img/home_img6.jpg" alt="">
+                    <div class="desc clearfix">
+                        <span class="case-name">
+                            大立教育网
+                        </span>
+                        <span class="go-look">
+                            <span class="txt">去看看</span>
+                            <img src="img/home_icon2.png" alt="">
+                        </span>
+                    </div>
+                </li>
+                <li class="case m-r m-t">
+                    <img src="img/home_img7.jpg" alt="">
+                    <div class="desc clearfix">
+                        <span class="case-name">
+                            金英杰医学
+                        </span>
+                        <span class="go-look">
+                            <span class="txt">去看看</span>
+                            <img src="img/home_icon2.png" alt="">
+                        </span>
+                    </div>
+                </li>
+                <li class="case m-r m-t">
+                    <img src="img/home_img8.jpg" alt="">
+                    <div class="desc clearfix">
+                        <span class="case-name">
+                            紫金博睿国际教育
+                        </span>
+                        <span class="go-look">
+                            <span class="txt">去看看</span>
+                            <img src="img/home_icon2.png" alt="">
+                        </span>
+                    </div>
+                </li>
+                <li class="case m-t">
+                    <img src="img/home_img9.jpg" alt="">
+                    <div class="desc clearfix">
+                        <span class="case-name">
+                            易电培训-华夏明源
+                        </span>
+                        <span class="go-look">
+                            <span class="txt">去看看</span>
+                            <img src="img/home_icon2.png" alt="">
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <ul class="w content">
+            <li class="footer_item footer_logo">
+                <img src="img/LOGO2.png" alt="">
+            </li>
+            <li class="footer_item footer_nav">
+                <h3 class="title">网站导航</h3>
+                <ul>
+                    <li class="footer_nav_item"><a href="index.html">官网首页</a></li>
+                    <li class="footer_nav_item"><a href="fw_trainingInstitution.html">服务类型</a></li>
+                    <li class="footer_nav_item"><a href="case.html">案例一览</a></li>
+                    <li class="footer_nav_item"><a href="#">新闻资讯</a></li>
+                    <li class="footer_nav_item"><a href="about_us.html">关于我们</a></li>
+                </ul>
+            </li>
+            <li class="footer_item contact_us">
+                <h3 class="title">联系我们</h3>
+                <ul>
+                    <li>公司地址：安徽省合肥市经济开发区</li>
+                    <li>联系电话：400-804-1114</li>
+                    <li>联系邮箱：2581747@youzan.com</li>
+                </ul>
+            </li>
+            <li class="footer_item fllow_us">
+                <h3 class="title">关注我们</h3>
+                <div class="qrCode">
+                    <img src="img/home_img10.png" alt="">
+                </div>
+            </li>
+        </ul>
+
+    </div>
 </body>
+
 </html>

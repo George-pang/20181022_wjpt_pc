@@ -41,6 +41,7 @@
                         width: 600px;
                         .service-name {
                             font-size: 28px;
+                            font-weight: normal;
                             line-height: 30px;
                             letter-spacing: 3px;
                             color: #333333;
@@ -91,6 +92,9 @@
                         border: solid 1px #0ddc7c;
                     }
                 }
+                .swiper-button-next,.swiper-button-prev{
+                    display: none;
+                }
             }
         }
         .column_platform {
@@ -104,7 +108,7 @@
                     .platform-icon {
                         text-align: center;
                         opacity: .6;
-                        transition: all .3s;
+                        transition: all .6s;
                         &:hover {
                             opacity: 1;
                         }
@@ -146,6 +150,12 @@
                     text-align: center;
                     border-radius: 5px;
                     border: solid 1px #0fec85;
+                    overflow: hidden;
+                    &:hover{
+                        .advantage-details{
+                            height: 100%;
+                        }
+                    }
                     .advantage-desc{
                         position: absolute;
                         top: 50%;
@@ -163,15 +173,16 @@
                         }
                     }
                     .advantage-details{
-                        display: none;
+                        // display: none;
                         position: absolute;
-                        top: 0;
+                        bottom: 0;
                         left: 0;
                         width: 100%;
-                        height: 100%;
+                        height: 0;
                         color: #fff;
                         text-align: center;
                         background-color: #0fec85;
+                        transition: all .3s;
                         .details-txt{
                             position: absolute;
                             top: 50%;
@@ -209,14 +220,20 @@
                     float: left;
                     width: 392px;
                     background-color: #4f4f4f;
+                    transition: all .6s;
                     &:hover{
                         img{
                             opacity: .5;
                         }
+                        .case-name{
+                            display: block;
+                            transform: translate(-50%,-50%) rotateY(180deg);
+                        }
+                        transform: rotateY(180deg);
                     }
                     img{
                         opacity: 1;
-                        transition: all .5s;
+                        transition: all .6s;
 
                     }
                     .case-name{
@@ -225,6 +242,8 @@
                         top: 50%;
                         left: 50%;
                         transform: translate(-50%,-50%);
+                        // backface-visibility: hidden;
+                        transition: all .6s;
                         .name{
                             font-size: 36px;
                             font-weight: normal;
@@ -241,6 +260,7 @@
                             background-color: #0ddc7c;
                             border-radius: 15px;
                             text-align: right;
+                            cursor: pointer;
                             img{
                                 vertical-align: baseline;
                             }
@@ -347,7 +367,7 @@
                 padding: 0 10px;
                 height: 30px;
                 line-height: 30px;
-                background-color: #0ddc7c;
+                background-color: #ffffff;
                 border-radius: 15px;
                 text-align: right;
                 img{

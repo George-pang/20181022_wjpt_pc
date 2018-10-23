@@ -1,14 +1,152 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>网教平台--关于我们</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/about_us.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <script src="js/jquery.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/about_us.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=mwvB00WLl6H5NgoEWOauDlCeG9a4ptip"></script>
 </head>
+
 <body>
-    
+    <div class="top-nav">
+        <div class="w nav-bar">
+            <div class="logo">
+                <img src="img/LOGO1.png" alt="">
+            </div>
+            <div class="r-nav">
+                <ul class="web-nav clearfix">
+                    <li class="nav-item">
+                        <a href="index.html" class="item_link item-current">首页</a>
+                    </li>
+                    <li class="nav-item nav-item-fw">
+                        <a href="fw_trainingInstitution.html" class="item_link">服务</a>
+                        <div class="fw_menu">
+                            <ul>
+                                <li class="fw_item"><a class="fw_item_link fw_item_cur" href="fw_trainingInstitution.html">教培机构</a></li>
+                                <li class="fw_item"><a class="fw_item_link" href="fw_smartCampus.html">智慧校园</a></li>
+                                <li class="fw_item"><a class="fw_item_link" href="fw_enterpriseTraining.html">企业培训</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="case.html" class="item_link">案例</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="item_link">新闻</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about_us.html" class="item_link">关于</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="about_banner">
+        <img src="img/about_banner.jpg" alt="">
+    </div>
+    <div class="about-main clearfix">
+        <div class="swiper-container about-us-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/about_img1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/about_img1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/about_img1.jpg" alt="">
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination about-swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="about_us">
+            <div class="tab-hd">
+                <div class="tab tab-prev tab-current">
+                    <img src="img/home_icon2.png" alt="">
+                </div>
+                <div class="tab tab-next">
+                    <img src="img/home_icon2.png" alt="">
+                </div>
+            </div>
+            <div class="tab-bd">
+                <div class="contact-us tab-item item-cur">
+                    <div class="title-row">
+                        <h4 class="title">联系我们</h4>
+                        <p class="subtitle">CONTACT US</p>
+                    </div>
+                    <div class="content">
+                        <div class="contact-info">
+                            <p>服务邮箱：416625434@qq.com</p>
+                            <p>联系电话：185-5550-5063/180-1088-2980</p>
+                            <p>公司地址：安徽省合肥市经开区锦绣大道68号清华启迪科技城</p>
+                        </div>
+                        <div class="map">
+                            <div id="container"></div>
+                            <!--创建地图容器-->
+                        </div>
+                    </div>
+                </div>
+                <div class="company-profile tab-item">
+                    <div class="title-row">
+                        <h4 class="title">公司简介</h4>
+                        <p class="subtitle">ABOUT US</p>
+                    </div>
+                    <div class="content">
+                        <p>安徽优赞科技有限公司是一家专注在线教育科技的互联网企业，致力于为企业、个人和教育机构提供包括平台、运营、内容和营销的在线教育整体解决方案。</p>
+                        <p>优赞旗下拥有EduSoho网络课堂、ES企培、ES智慧课堂、教育云等产品，截止2017年4月，已服务国内外4万多家企业和教育机构，200多家高等院校，覆盖至美、加、日、英、德、等50多个发达国家。</p>
+                        <p>优赞的公司使命是“用科技创新让每个人得到更好的教育”，我们致力于推动在线教育的发展，在2014年-2016年推动了在线教育整体30%的发展速度。我们通过技术创新不断降低在线教育技术门槛，自主研发TLP2.0技术、视频指纹技术、动态转码技术、浏览器缓存技术、十万在线并发技术、以及高定制化框架等针对教育行业的技术。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <ul class="w content">
+            <li class="footer_item footer_logo">
+                <img src="img/LOGO2.png" alt="">
+            </li>
+            <li class="footer_item footer_nav">
+                <h3 class="title">网站导航</h3>
+                <ul>
+                    <li class="footer_nav_item"><a href="index.html">官网首页</a></li>
+                    <li class="footer_nav_item"><a href="fw_trainingInstitution.html">服务类型</a></li>
+                    <li class="footer_nav_item"><a href="case.html">案例一览</a></li>
+                    <li class="footer_nav_item"><a href="#">新闻资讯</a></li>
+                    <li class="footer_nav_item"><a href="about_us.html">关于我们</a></li>
+                </ul>
+            </li>
+            <li class="footer_item contact_us">
+                <h3 class="title">联系我们</h3>
+                <ul>
+                    <li>公司地址：安徽省合肥市经济开发区</li>
+                    <li>联系电话：400-804-1114</li>
+                    <li>联系邮箱：2581747@youzan.com</li>
+                </ul>
+            </li>
+            <li class="footer_item fllow_us">
+                <h3 class="title">关注我们</h3>
+                <div class="qrCode">
+                    <img src="img/home_img10.png" alt="">
+                </div>
+            </li>
+        </ul>
+
+    </div>
+    <script src="js/map.js"></script>
 </body>
+
 </html>
