@@ -3,6 +3,7 @@ $(function () {
     $(".tab").on("click",function(){
         var tabIndex=$(this).index();
         console.log(tabIndex);
+        // Swiper方法-Swiper切换到指定slide
         functionSwiper.slideTo(tabIndex+1, 500, false);
     });
 
@@ -10,13 +11,13 @@ $(function () {
 
     //初始化 swipper
     var industrySwiper = new Swiper('.industrySwipper', {
-        direction: 'horizontal', // 垂直切换选项
-        loop: true, // 循环模式选项
+        direction: 'horizontal', 
+        loop: true, 
         slidesPerView: 3,
         spaceBetween: 60,
         autoplay: {
             delay: 3000,
-            disableOnInteraction: false, //设置为false，用户操作swiper之后自动切换不会停止，每次都会重新启动autoplay。
+            disableOnInteraction: false, 
         },
         // 如果需要前进后退按钮
         navigation: {
@@ -25,20 +26,22 @@ $(function () {
         },
     });
     var functionSwiper = new Swiper ('.function-swiper', {
-        direction: 'horizontal', // 垂直切换选项
-        loop: true, // 循环模式选项
+        direction: 'horizontal', 
+        loop: true, 
         autoplay: {
             delay: 3000,
-            disableOnInteraction: false, //设置为false，用户操作swiper之后自动切换不会停止，每次都会重新启动autoplay。
+            disableOnInteraction: false, 
         },
         // 如果需要分页器
         pagination: {
           el: '.function-swiper-pagination',
           clickable :true,
         },
+        // Swiper callbacks
         on:{
+            //当当前Slide切换时执行(activeIndex发生改变),实现左侧tab的对应切换
             slideChange: function(){
-              var index=this.realIndex;
+              var index=this.realIndex;//当前活动块的索引
               $(".tab").eq(index).addClass("tab-cur").siblings().removeClass("tab-cur");
             },
           },
