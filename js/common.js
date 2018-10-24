@@ -1,9 +1,14 @@
 $(function () {
     /* 顶部导航当前tab背景色切换*/
+    var index=$(".item-current").index();
     $(".nav-item").on("mouseenter", function () {
-        $(this).siblings().find(".item_link").removeClass("item-current");
-        $(this).find(".item_link").addClass("item-current");
+        $(this).addClass("item-current").siblings().removeClass("item-current");
     });
+    //移出后返回当前网页的导航tab
+    $(".r-nav").on("mouseleave", function () {
+        $(".nav-item").eq(index).addClass("item-current").siblings().removeClass("item-current");
+    });
+
     // 顶部导航服务菜单的显示隐藏
     $(".nav-item-fw").on("mouseenter", function () {
         $(".fw_menu").show();

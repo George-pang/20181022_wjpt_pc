@@ -1,14 +1,254 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>网教平台--服务_教培机构</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/fw.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/hover-min.css">
     <script src="js/jquery.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/fw.js"></script>
 </head>
+
 <body>
-    
+    <div class="top-nav">
+        <div class="w nav-bar">
+            <div class="logo">
+                <img src="img/LOGO1.png" alt="">
+            </div>
+            <div class="r-nav">
+                <ul class="web-nav clearfix">
+                    <li class="nav-item">
+                        <a href="index.html" class="item_link">首页</a>
+                    </li>
+                    <li class="nav-item nav-item-fw item-current">
+                        <a href="fw_trainingInstitution.html" class="item_link">服务</a>
+                        <div class="fw_menu">
+                            <ul>
+                                <li class="fw_item"><a class="fw_item_link fw_item_cur" href="fw_trainingInstitution.html">教培机构</a></li>
+                                <li class="fw_item"><a class="fw_item_link" href="fw_smartCampus.html">智慧校园</a></li>
+                                <li class="fw_item"><a class="fw_item_link" href="fw_enterpriseTraining.html">企业培训</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="case.html" class="item_link">案例</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="item_link">新闻</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about_us.html" class="item_link">关于</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="fw-banner-container">
+        <div class="fw-banner-wrapper">
+            <img src="img/fuwu_banner1.jpg" alt="" class="banner-pic">
+            <div class="copy-writing">
+                <div class="title">
+                    教培机构服务方案
+                </div>
+                <div class="subtitle">
+                    助力教培机构轻松转型在线教育
+                </div>
+                <a href="#" class="zy-btn">
+                    <span class="btn-txt">立即咨询</span>
+                    <img class="btn-icon" src="img/home_icon2.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="fw-main fw-jpjg-main">
+        <div class="column-wrapper">
+            <div class="w column column-industry">
+                <h3 class="column-title">
+                    为各类行业打造精品
+                </h3>
+                <div class="industrySwipper-container">
+                    <div class="swiper-container industrySwipper" id="industrySwipper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/fuwu_img1.jpg" alt="">
+                                <h3 class="industry">金融会计</h3>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/fuwu_img2.jpg" alt="">
+                                <h3 class="industry">医学教育</h3>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/fuwu_img3.jpg" alt="">
+                                <h3 class="industry">留学语言</h3>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/fuwu_img4.jpg" alt="">
+                                <h3 class="industry">司法</h3>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/fuwu_img5.jpg" alt="">
+                                <h3 class="industry">艺术</h3>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/fuwu_img6.jpg" alt="">
+                                <h3 class="industry">金融</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+        <div class="column-wrapper shallow-bg">
+            <div class="w column column-safety">
+                <h3 class="column-title">
+                    视频版权保护专利，让网校授课无忧
+                </h3>
+                <ul class="safety-list clearfix">
+                    <li class="safety-item">
+                        <div class="safety-icon">
+                            <img src="img/fuwu_icon3.png" alt="">
+                        </div>
+                        <h3 class="safety-name">视频安全</h3>
+                        <p class="safety-summary">提供完善视频课程安全保护机制，添加水印、跑马灯等效果加密，有效防止视频下载、盗链、录屏等盗版行为，课程安全有保障</p>
+                    </li>
+                    <li class="safety-item">
+                        <div class="safety-icon">
+                            <img src="img/fuwu_icon4.png" alt="">
+                        </div>
+                        <h3 class="safety-name">数据安全</h3>
+                        <p class="safety-summary">网校数据应用MD5 加密算法和SSL加密传输，杜绝数据泄露风险，有效防护暴力破解攻击，账户敏感操作需身份验证等</p>
+                    </li>
+                    <li class="safety-item">
+                        <div class="safety-icon">
+                            <img src="img/fuwu_icon5.png" alt="">
+                        </div>
+                        <h3 class="safety-name">系统安全</h3>
+                        <p class="safety-summary">统底层多重安全设计，，应用层进行攻击拦截和漏洞扫描预警，多项安全技术专利，符合国家级安全测试认证，解决网校安全问题</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="column-wrapper">
+            <div class="w column column-function">
+                <h3 class="column-title">
+                    功能齐全，全方位满足您的需求
+                </h3>
+                <div class="function-list clearfix">
+                    <ul class="left-tab">
+                        <li class="tab border-bottom tab-cur">
+                            <span class="tab-name">
+                                直播录播教学
+                            </span>
+                            <span class="tab-index">01</span>
+                        </li>
+                        <li class="tab border-bottom">
+                            <span class="tab-name">
+                                自动化考试系统
+                            </span>
+                            <span class="tab-index">02</span>
+                        </li>
+                        <li class="tab border-bottom">
+                            <span class="tab-name">
+                                任务式教学计划
+                            </span>
+                            <span class="tab-index">03</span>
+                        </li>
+                        <li class="tab">
+                            <span class="tab-name">
+                                师生多渠道互动
+                            </span>
+                            <span class="tab-index">04</span>
+                        </li>
+                    </ul>
+                    <div class="function-swiper-container">
+                        <div class="swiper-container function-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="pic">
+                                        <img src="img/fuwu_img7.png" alt="">
+                                    </div>
+                                    <p class="function-summary">弹题录播、互动直播、音频课程，12种教学手段打造个性化教学计划</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="pic">
+                                        <img src="img/fuwu_img8.png" alt="">
+                                    </div>
+                                    <p class="function-summary">支持整卷导入导出，自动化组卷阅卷，高效实现在线考试</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="pic">
+                                        <img src="img/fuwu_img9.png" alt="">
+                                    </div>
+                                    <p class="function-summary">教学计划结合任务机制，有效规划和把控学员学习进程</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="pic">
+                                        <img src="img/fuwu_img10.png" alt="">
+                                    </div>
+                                    <p class="function-summary">小组讨论、APP端语音群、在线问答、私信增进师生互动</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 如果需要分页器 -->
+                        <div class="swiper-pagination function-swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column-wrapper shallow-bg2">
+            <div class="w column column-customer">
+                <h3 class="column-title">
+                    他们选择了我们的方案
+                </h3>
+                <ul class="customer-list clearfix">
+                    <img src="img/fuwu_img11.jpg" alt="">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <ul class="w content">
+            <li class="footer_item footer_logo">
+                <img src="img/LOGO2.png" alt="">
+            </li>
+            <li class="footer_item footer_nav">
+                <h3 class="title">网站导航</h3>
+                <ul>
+                    <li class="footer_nav_item"><a href="index.html">官网首页</a></li>
+                    <li class="footer_nav_item"><a href="fw_trainingInstitution.html">服务类型</a></li>
+                    <li class="footer_nav_item"><a href="case.html">案例一览</a></li>
+                    <li class="footer_nav_item"><a href="#">新闻资讯</a></li>
+                    <li class="footer_nav_item"><a href="about_us.html">关于我们</a></li>
+                </ul>
+            </li>
+            <li class="footer_item contact_us">
+                <h3 class="title">联系我们</h3>
+                <ul>
+                    <li>公司地址：安徽省合肥市经济开发区</li>
+                    <li>联系电话：400-804-1114</li>
+                    <li>联系邮箱：2581747@youzan.com</li>
+                </ul>
+            </li>
+            <li class="footer_item fllow_us">
+                <h3 class="title">关注我们</h3>
+                <div class="qrCode">
+                    <img src="img/home_img10.png" alt="">
+                </div>
+            </li>
+        </ul>
+
+    </div>
 </body>
+
 </html>
