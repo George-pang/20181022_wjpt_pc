@@ -79,32 +79,34 @@ body {
                     color: #333;
                 }
                 .fw_menu{
-                    display: none;
-                    position: absolute;
+                  
+                     display: none; position: absolute;
                     bottom: 0;
                     left: 50%;
                     transform: translate(-50%, 100%);
-                    padding: 30px 0;
+                    padding: 10px 0;
                     background-color: #fff;
                     border-radius: 0px 0px 70px 70px;
                     overflow: hidden;
                     z-index: 1000;
                     .fw_item{
-                        margin-top: 40px;
                         width: 140px;
-                        line-height: 1em;
                         text-align: center;
                         &>a{
+                            display: block;
+                            height: 60px;
+                            line-height: 60px;
                             font-size: 18px;
                         }
-                        .fw_item_cur{
-                            color: #0ddc7c!important;
                         }
                         &:nth-child(1){
                             margin-top: 0;
                         }
                     }
-
+                    .fw_item_cur{
+                        .fw_item_link{
+                            color: #0ddc7c!important;
+                    }
                 }
             }
             .item-current{
@@ -122,6 +124,48 @@ body {
         // height: 590px;
         .swiper-slide{
             text-align: center;
+            .slide{
+                display: inline-block;
+                position: relative;
+                .home-banner-desc{
+                    position: absolute;
+                    bottom: 28.3%;
+                    left: 19%;
+                    font-weight: 300;
+                    .title{
+                        font-size: 62px;
+                        line-height: 72px;
+                        letter-spacing: 0px;
+                        color: #ffffff;
+                        text-align: left;
+                    }
+                    .sub-title{
+                        margin-top: 20px;
+                        font-size: 32px;
+                        letter-spacing: 0px;
+                        color: #ffffff;
+                        text-align: left;
+                    }
+                    .zy-btn{
+                        display: block;
+                        margin-top: 40px;
+                        width: 140px;
+                        height: 40px;
+                        line-height: 40px;
+                        background-color: #fafbfd;
+                        border-radius: 20px;
+                        cursor: pointer;
+                        span{
+                            margin-right: 5px;
+                            font-size: 18px;
+                            letter-spacing: 0px;
+                            color: #0ddc7c;
+                            vertical-align: middle;
+                        }
+                    }
+                    
+                }
+            }
         }
         .swiper-pagination{
             .swiper-pagination-bullet{
@@ -155,44 +199,6 @@ body {
             background-size: cover;
         }
     }  
-    .home-banner-desc{
-        position: absolute;
-        bottom: 28.3%;
-        left: 15%;
-        .title{
-            font-size: 62px;
-            font-weight: normal;
-            line-height: 72px;
-            letter-spacing: 0px;
-            color: #ffffff;
-            text-align: left;
-        }
-        .sub-title{
-            margin-top: 20px;
-            font-size: 32px;
-            letter-spacing: 0px;
-            color: #ffffff;
-            text-align: left;
-        }
-        .zy-btn{
-            display: block;
-            margin-top: 40px;
-            width: 140px;
-            height: 40px;
-            line-height: 40px;
-            background-color: #fafbfd;
-            border-radius: 20px;
-            cursor: pointer;
-            span{
-                margin-right: 5px;
-                font-size: 18px;
-                letter-spacing: 0px;
-                color: #0ddc7c;
-                vertical-align: middle;
-            }
-        }
-        
-    }
 }
 .footer{
     height: 450px;

@@ -1,7 +1,7 @@
 $(function(){
     // tab切换
     $(".tab").on("click",function(){
-        $(this).addClass("tab-current").siblings().removeClass("tab-current")
+        $(this).removeClass("tab-current").siblings().addClass("tab-current");
         var index=$(this).index();
         $(".tab-item").eq(index).show().siblings().hide();
     });

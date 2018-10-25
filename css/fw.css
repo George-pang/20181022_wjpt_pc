@@ -15,13 +15,13 @@
 .fw-banner-container .fw-banner-wrapper .copy-writing {
   position: absolute;
   bottom: 24%;
-  left: 22%;
+  left: 19%;
   width: 400px;
   text-align: left;
+  font-weight: 300;
 }
 .fw-banner-container .fw-banner-wrapper .copy-writing .title {
   font-size: 48px;
-  font-weight: normal;
   font-stretch: normal;
   line-height: 72px;
   letter-spacing: 0px;
@@ -29,7 +29,6 @@
 }
 .fw-banner-container .fw-banner-wrapper .copy-writing .subtitle {
   font-size: 28px;
-  font-weight: normal;
   font-stretch: normal;
   line-height: 72px;
   letter-spacing: 0px;
@@ -295,9 +294,8 @@
   font-size: 28px;
   color: #fff;
   text-align: center;
-  background-color: #0ddc7c;
+  background-color: rgba(13, 220, 124, 0.8);
   border-radius: 2px;
-  opacity: 0.8;
   transition: all .6s;
 }
 .fw-zhxy-main .column-solution-wrapper {
@@ -560,10 +558,13 @@
   width: 250px;
   height: 260px;
   background-color: #fff;
-  box-shadow: 0px 0px 9px 1px rgba(42, 198, 131, 0.15);
+  transition: all .3s;
 }
 .fw-qypx-main .column-fangan .fangan-list .fangan-item:nth-child(4) {
   margin-right: 0;
+}
+.fw-qypx-main .column-fangan .fangan-list .fangan-item:hover {
+  box-shadow: 0px 0px 9px 1px rgba(42, 198, 131, 0.15);
 }
 .fw-qypx-main .column-fangan .fangan-list .fangan-item:hover .item-title {
   color: #29d384;
@@ -643,6 +644,19 @@
   background-color: #4f4f4f;
   border-radius: 5px;
   overflow: hidden;
+}
+.fw-qypx-main .column-fuwu .fuwu-list .fuwu-item .fuwu-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 16px;
+  text-align: center;
+  font-family: PingFang-SC-Medium;
+  font-size: 28px;
+  font-weight: normal;
+  color: #fff;
 }
 .fw-qypx-main .column-fuwu .fuwu-list .fuwu-item:nth-child(3) {
   margin-right: 0;
